@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorvibe (Test)</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body class="font-body text-xl lg:overflow-x-hidden">
+
+    <section id="hero"
+        class="container mx-auto px-4 md:px-8 lg:px-0 text-center lg:text-left p-4 md:p-8 lg:p-0">
+        <div class="relative lg:absolute w-full">
+            <header>
+                <nav class="flex flex-wrap mt-5 items-center justify-between">
+                    <div class="ml-0 lg:ml-auto">
+                        <a href="#" class="lg:hidden">
+                            <img src="/img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                        class="h-6 w-6 cursor-pointer md:hidden block mr-0" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+
+                    <div class="pb-4 hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                        <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0">
+                            <li>
+                                <a class="md:p-4 py-3 block hover:text-red-300" href="#">Services</a>
+                            </li>
+                            <li>
+                                <a class="md:p-4 py-3 block hover:text-red-300" href="#">Our Work</a>
+                            </li>
+                            <li>
+                                <a class="md:p-4 py-3 block hover:text-red-300" href="#">Opening Hours</a>
+                            </li>
+                            <li>
+                                <a class="md:p-4 py-3 block hover:text-red-300" href="#">Reviews</a>
+                            </li>
+                            <li>
+                                <a class="md:p-4 py-3 block hover:text-red-300" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:my-0">
+            <div class="hero-img-left w-full h-[50vh] md:h-[600px] md:h-[600px] lg:h-[1080px] bg-center bg-cover relative my-4 lg:my-0">
+                <img id="img-size" src="./img/hero-left.jpg" class="w-full h-full absolute inset-0" alt="hero image left">
+                <h1 class="font-heading text-5xl md:text-7xl lg:text-9xl text-center text-tertiary-200 md:pt-5 lg:pt-5 relative z-10 text-white">
+                    RazorVibe
+                </h1>
+            </div>
+
+            <div class="hero-img-right lg:px-32 w-full lg:mt-20">
+                <div class="container mx-auto">
+                <img src="./img/hero-right.jpg" class="w-full mt-5" alt="hero image right">
+
+                <p class="mt-4">Fine haircuts and fades, trims, old and young, all kinds of cuts, afro
+                    specialists, bowl cuts,
+                    undercut, 30+ years
+                    combined experience all in one shop. Based in Eastcote, North West London, supplying cuts to all
+                    boroughs and
+                    surrounding areas, including harrow, uxbridge, north and south of the river.</p>
+                </div>
+
+                <div class="hero-btns mt-10 relative lg:absolute w-full lg:top-56 lg:right-[-690px]">
+                    <span class="flex w-48 rounded-lg bg-gray-200 hover:bg-gray-950 hover:text-white"><img
+                            class="ml-[-9px] mr-2" src="./img/book-btn1.png" alt="hero-btn-icon1"><button class="ml-2">
+                                Book Now</button></span>
+                    <span class="flex w-48 mt-5 rounded-lg bg-gray-200 lg:z-100 hover:bg-gray-950 hover:text-white"><img
+                            class="ml-[-9px] mr-2" src="./img/book-btn2.png" alt="hero-btn-icon2"><button class="ml-2">
+                                Book Now</button></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let menuButton = document.getElementById("menu-button");
+        let menu = document.getElementById("menu");
+
+        menuButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
