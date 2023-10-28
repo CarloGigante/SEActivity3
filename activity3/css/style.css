@@ -43,7 +43,7 @@
 /* add code here */
 .font-heading{
   font-family: 'SF Pro Display Regular',sans-serif;
-  font-weight: 600;
+  font-weight: 650;
 }
 @media (max-width: 768px) {
   #menu {
@@ -55,16 +55,15 @@
   #menu.active {
       display: block;
   }
+  .text-5xl-mobile {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-top: 5%;
+  }
 }
 @media (min-width: 769px) {
   #menu ul {
     padding-left: 30rem;
     padding-top: 5px;
   }
-  .hero-img-right {
-    width: 50%; 
 }
-}
-
-
-
